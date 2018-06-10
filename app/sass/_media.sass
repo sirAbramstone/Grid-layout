@@ -21,19 +21,19 @@
 @media only screen and (max-width : 992px)
   .button
     font-size: 18px
-  .buttoncase
-    grid-column: 1 / 4
   .header-content
     h1
       font-size: 50px
       line-height: 1.3
   .portfolio-section
     grid-template-columns: repeat(3, 1fr)
+    .buttoncase
+      grid-column: 1 / 3
   .portofolio-item
     min-height: 40vh
     font-size: 16px
     &:nth-child(4)
-      grid-column: 2 /span 2
+      grid-column: 2 / span 2
     &:nth-child(5)
       grid-column: 1 / span 2
       grid-row: initial
@@ -64,18 +64,18 @@
         padding: 0 10px
         &.ready-left
           border: none
-.section-form
-  form
-    grid-template-columns: repeat(2, 1fr)
-.blog-home
-  grid-template-columns: 1fr
-  .buttoncase
-    grid-column: 1 / 2
-  .blog-item
-    &:nth-child(3)
-      grid-column: initial
-    &:nth-child(4)
-      grid-column: initial
+  .section-form
+    form
+      grid-template-columns: repeat(2, 1fr)
+  .blog-home
+    grid-template-columns: 1fr
+    .buttoncase
+      grid-column: 1 / 2
+    .blog-item
+      &:nth-child(3)
+        grid-column: initial
+      &:nth-child(4)
+        grid-column: initial
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -84,6 +84,8 @@
       font-size: 40px
   .portfolio-section
     grid-template-columns: 1fr
+    .buttoncase
+      grid-column: 1
   .portofolio-item
     min-height: 50vh
     &:nth-child(1)
@@ -92,8 +94,6 @@
       grid-column: initial
     &:nth-child(5)
       grid-column: initial
-    .buttoncase
-      grid-column: 1
   .section-form
     form
       grid-template-columns: 1fr
